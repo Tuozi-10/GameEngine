@@ -1,1 +1,8 @@
-﻿LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'sfml-graphics-s.lib'
+﻿  AbstractGameObject.cpp
+  Entity.cpp
+  GameEngine.cpp
+  GameObject.cpp
+  PersistantGameObject.cpp
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1092,5): error MSB6006: "link.exe" exited with code 1104.
+LINK : fatal error LNK1104: cannot open file 'sfml-graphics-s.lib'
