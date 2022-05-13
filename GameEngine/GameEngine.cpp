@@ -1,6 +1,9 @@
+#include "Macros.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "WindowDefinition.h"
+#include "LinkedList.h"
+#include "UnitTests.h"
 
 using namespace sf;
 
@@ -8,12 +11,17 @@ using namespace sf;
 
 void displayWindow(WindowDefinition* definition);
 
+
 int main()
 {
+    #ifdef UNIT_TESTS
+    RunUnitTests();
+    return -1;
+    #else
     WindowDefinition* definition = GetWindowDefinition();
     displayWindow(definition);
+    #endif
 }
-
 
 void displayWindow(WindowDefinition* definition)
 {

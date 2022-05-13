@@ -31,6 +31,12 @@
     <Filter Include="Fichiers d%27en-tête\Utilities">
       <UniqueIdentifier>{6ecabb37-cf16-41bb-bb54-51c9dd5d8f0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\UnitTests">
+      <UniqueIdentifier>{c1fd481e-e402-4c79-b512-fbd23bfdef6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\UnitTests">
+      <UniqueIdentifier>{dbdde62a-9831-46f2-85aa-e2d5d3013aeb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp">
@@ -54,6 +60,12 @@
     <ClCompile Include="WindowDefinition.cpp">
       <Filter>Fichiers sources\Utilities</Filter>
     </ClCompile>
+    <ClCompile Include="UnitTests.cpp">
+      <Filter>Fichiers sources\UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListUnitTest.cpp">
+      <Filter>Fichiers sources\UnitTests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PersistantGameObject.h">
@@ -73,6 +85,15 @@
     </ClInclude>
     <ClInclude Include="WindowDefinition.h">
       <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListUnitTests.h">
+      <Filter>Fichiers d%27en-tête\UnitTests</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitTests.h">
+      <Filter>Fichiers d%27en-tête\UnitTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

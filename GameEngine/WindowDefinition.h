@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef DEFWindowDefinition
+#define DEFWindowDefinition
+
 #include <vector>
 #include <string>
 #include <iostream>
@@ -12,3 +16,5 @@ struct WindowDefinition
 };
 
 WindowDefinition* GetWindowDefinition();
+
+#endif

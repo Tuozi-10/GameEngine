@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Work\GameEngine\GameEngine\x64\Release\GameEngine.exe</FullPath>
+      <FullPath>C:\Work\GameEngine\GameEngine\x64\Release\GameEngine.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
