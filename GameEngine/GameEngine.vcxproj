@@ -148,13 +148,17 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="PersistantGameObject.cpp" />
+    <ClCompile Include="WindowDefinition.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractGameObject.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="PersistantGameObject.h" />
+    <ClInclude Include="WindowDefinition.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

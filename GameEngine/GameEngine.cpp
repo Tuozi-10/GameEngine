@@ -1,23 +1,34 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "WindowDefinition.h"
+
+using namespace sf;
 
 // https://www.sfml-dev.org/tutorials/2.5/
 
+void displayWindow(WindowDefinition* definition);
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    WindowDefinition* definition = GetWindowDefinition();
+    displayWindow(definition);
+}
 
-    sf::RenderWindow window(sf::VideoMode(500, 400), "GameEngine");
-    sf::CircleShape shape(100.f);
-    shape.setPosition(200,150);
-    shape.setFillColor(sf::Color::Green);
+
+void displayWindow(WindowDefinition* definition)
+{
+    RenderWindow window(VideoMode(definition->size[0], definition->size[1]), definition->name);
+
+    CircleShape shape(100.f);
+    shape.setPosition(200, 150);
+    shape.setFillColor(Color::Green);
 
     while (window.isOpen())
     {
-        sf::Event event;
+        Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
+            if (event.type == Event::Closed)
                 window.close();
         }
 
@@ -25,6 +36,5 @@ int main()
         window.draw(shape);
         window.display();
     }
-
 
 }
